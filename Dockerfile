@@ -11,6 +11,9 @@ RUN apt-get update \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /app/media
+RUN mkdir -p /app/static
+
 COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt

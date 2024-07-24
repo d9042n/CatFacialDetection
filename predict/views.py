@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 model = YOLO("predict/ml/YOLOv8n-pose/best.pt")
 upload_path = "predict/upload/"
-predicted_path = "predict/predicted/"
+predicted_path = "media/"
 
 
 def predict(filename):
